@@ -64,7 +64,7 @@ export const TaskForm: React.FC<TaskFormProps> = ({
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           placeholder="Enter task title"
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder:text-gray-500"
           disabled={isLoading}
         />
       </div>
@@ -79,7 +79,7 @@ export const TaskForm: React.FC<TaskFormProps> = ({
           onChange={(e) => setDescription(e.target.value)}
           placeholder="Enter task description (optional)"
           rows={4}
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder:text-gray-500"
           disabled={isLoading}
         />
       </div>
@@ -93,7 +93,7 @@ export const TaskForm: React.FC<TaskFormProps> = ({
             id="status"
             value={status}
             onChange={(e) => setStatus(e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
             disabled={isLoading}
           >
             {TASK_STATUSES.map((s) => (
@@ -113,7 +113,7 @@ export const TaskForm: React.FC<TaskFormProps> = ({
             type="date"
             value={dueDate}
             onChange={(e) => setDueDate(e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
             disabled={isLoading}
           />
         </div>
